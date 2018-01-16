@@ -4,7 +4,7 @@ header{
     position: relative;
     display: block;
     width: 100%;
-    background: $black;
+    background: $darkGrey;
     color: $white;
     height: 90px;
 
@@ -13,6 +13,7 @@ header{
         top: 50%; left: 15px;
         @include translateY(-50%);
     }
+
 }
 
 nav,
@@ -24,19 +25,20 @@ nav ul li {
 
 nav {
     position: absolute;
-    top: 50%; right: 15px;
+    top: 50%; left: 29%;
      @include translateY(-50%);
 
      ul li {
          list-style-type: none;
          display: inline-block;
-         margin-right: 20px;
+         margin-right: 100px;
 
          &.last{
              margin: 0;
          }
          a{
-             font-size: 19px;
+             font-size: 23px;
+             font-family: Segoe UI;
              line-height: normal;
              color: $white;
          }

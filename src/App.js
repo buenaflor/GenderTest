@@ -9,10 +9,11 @@ import {
 import Header from './components/headerComponent/header'
 import Footer from './components/footerComponent/footer'
 import Homepage from './components/pages/homePage'
-import Products from './components/pages/products'
+import GendernDetails from './components/pages/gendernDetails'
 
 // includes
 import './Assets/css/default.min.css';
+import gendernDetails from './components/pages/gendernDetails';
 
 class App extends Component {
   render() {
@@ -21,9 +22,10 @@ class App extends Component {
       <div className="App">
 
        <Header />
+       
 
         <Route exact path='/' component={Homepage} />
-        <Route exact path='/Products' component={Products} />
+        <Route exact path='/gendernDetails' component={gendernDetails} />
        
        <Footer />
 

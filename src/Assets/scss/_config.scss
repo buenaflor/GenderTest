@@ -1,8 +1,8 @@
 $black: #010000;
-$white: #ffffff;
+$whitegrey: #b4b3b3;
 $lightGrey: #e6e6e6;
 $darkGrey: #333333;
-$red: #ff1755;
+$white: #ffffff;
 
 
 @mixin translateY($e) {
@@ -26,12 +26,14 @@ body{
 }
 
 a {
+    
+      
     text-decoration: none;
     @include transition(.4s ease-in-out);
     cursor: pointer;
 
     &:hover {
-      color: $red;
+      color: $whitegrey;
       @include transition(.4s ease-in-out);
     }
 }

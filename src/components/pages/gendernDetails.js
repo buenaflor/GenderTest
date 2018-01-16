@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Products extends Component {
+class GendernDetails extends Component {
   render() {
     return (
        <div className="container-fluid">
@@ -15,4 +15,4 @@ class Products extends Component {
   }
 }
 
-export default Products;
+export default GendernDetails;
