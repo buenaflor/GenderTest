@@ -16,6 +16,8 @@ import './Assets/css/default.min.css';
 import gendernDetails from './components/pages/gendernDetails';
 
 class App extends Component {
+
+  
   render() {
     return (
       <Router>
@@ -24,7 +26,7 @@ class App extends Component {
        <Header />
        
 
-        <Route exact path='/' component={Homepage} />
+        <Route exact path='/homePage' component={Homepage} />
         <Route exact path='/gendernDetails' component={gendernDetails} />
        
        <Footer />
