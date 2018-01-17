@@ -25,13 +25,14 @@ nav ul li {
 
 nav {
     position: absolute;
-    top: 50%; left: 29%;
+    top: 50%; left: 31%;
      @include translateY(-50%);
 
      ul li {
          list-style-type: none;
          display: inline-block;
          margin-right: 100px;
+
 
          &.last{
              margin: 0;
