@@ -2,10 +2,11 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://buenaflor.github.io/testBuild/",
+  "homepage": "https://buenaflor.github.io/GenderTest/",
   "dependencies": {
     "global": "^4.3.2",
     "gulp": "^3.9.1",
+    "mysql": "^2.15.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",

@@ -5,14 +5,24 @@ class Homepage extends Component {
   constructor(props){
     super(props)
     this.state = {
-      textValue: '',
+      textValue: ''
     }
   }
+   iterateSentence(string) {
+    var words = string.split(" ");
+    var answer = "";
+    for (var i = 0; i < words.length; i += 1) {
+      words[i] = words[i].replace("Microsoft", "I got replaced")
+      answer = answer + " " + words[i]
+      /*var count = words[i].length - 2;
+      var last = words[i].charAt(words[i].length - 1);
+      answer= answer + words[i][0] + count + last;*/
+    }
 
-
-  onClick = (event) => {
-    var str = this.state.textValue;
-    alert(str.replace("Microsoft", "Microsoft got replaced"))
+    // Sets the current value/state of "Textarea" to the answer
+    this.setState({
+      textValue: answer
+    })
   }
 
   render() {
@@ -26,10 +36,10 @@ class Homepage extends Component {
         </p>
         
         <Form>
-        <Form.TextArea onChange={(e) => this.setState({textValue: e.target.value})}
+        <Form.TextArea id="hi" onChange={(e) => this.setState({textValue: e.target.value})}
               value={this.state.textValue} label='About' placeholder='Füge deinen Text hier ein...' />
         <Form.Checkbox label='I stimme dem Blabal zu' />
-        <Form.Button onClick={this.onClick}>Text Gendern!</Form.Button>
+        <Form.Button onClick={() => this.iterateSentence(this.state.textValue)}>Text Gendern!</Form.Button>
         </Form>
        </div>
     );

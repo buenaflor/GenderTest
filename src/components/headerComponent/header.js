@@ -12,7 +12,7 @@ class Header extends Component {
         <nav>
             <ul>
                 <li className="first">
-                <Link to="/">Startseite</Link>
+                <Link to="/Homepage">Startseite</Link>
                 </li>
                 <li>
                 <Link to="/GendernDetails">Wozu Gendern?</Link>
