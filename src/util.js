@@ -1,5 +1,9 @@
 class Util{
-connectToPrint(){
+
+  getJSON(){
+    var myObject = JSON.parse("./alternatives.json");
+  }
+/*connectToPrint(){
 var mysql = require('mysql')
 var connection = mysql.createConnection({
   host     : 'localhost',
@@ -17,6 +21,6 @@ connection.query('SELECT selection1_name from alternatives as selection', functi
 })
 
 connection.end()
-}
+}*/
 }
 export default Util;

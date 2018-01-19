@@ -2,11 +2,20 @@ import React, { Component } from 'react';
 import {Button, Icon, Form} from 'semantic-ui-react'
 import TextArea from 'semantic-ui-react/dist/commonjs/addons/TextArea/TextArea';
 import Util from '/projects/my-app/src/util'
+import * as data from './alternatives.json';
+class User {
+  name;
+
+  constructor(data) {
+    Object.assign(this, data);
+//  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  }
+}
 class Homepage extends Component {
   constructor(props){
     super(props)
     this.state = {
-      textValue: ''
+      textValue: '',
     }
   }
    iterateSentence(string) {
@@ -19,11 +28,14 @@ class Homepage extends Component {
       var last = words[i].charAt(words[i].length - 1);
       answer= answer + words[i][0] + count + last;*/
     }
-
+    var jsonData = require('./alternatives.json');
     // Sets the current value/state of "Textarea" to the answer
     this.setState({
       textValue: answer
     })
+
+    alert(JSON.stringify(jsonData))
+
     //Util.connectionToPrint()
   }
 
