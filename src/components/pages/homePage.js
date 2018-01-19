@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Button, Icon, Form} from 'semantic-ui-react'
 import TextArea from 'semantic-ui-react/dist/commonjs/addons/TextArea/TextArea';
+import Util from '/projects/my-app/src/util'
 class Homepage extends Component {
   constructor(props){
     super(props)
@@ -23,6 +24,7 @@ class Homepage extends Component {
     this.setState({
       textValue: answer
     })
+    //Util.connectionToPrint()
   }
 
   render() {
@@ -38,6 +40,7 @@ class Homepage extends Component {
         <Form>
         <Form.TextArea id="hi" onChange={(e) => this.setState({textValue: e.target.value})}
               value={this.state.textValue} label='About' placeholder='Füge deinen Text hier ein...' />
+              
         <Form.Checkbox label='I stimme dem Blabal zu' />
         <Form.Button onClick={() => this.iterateSentence(this.state.textValue)}>Text Gendern!</Form.Button>
         </Form>
