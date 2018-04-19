@@ -15,7 +15,7 @@ class Header extends Component {
                 <Link to="/Homepage">Startseite</Link>
                 </li>
                 <li>
-                <Link to="/GendernDetails">Wozu Gendern?</Link>
+                <Link to="/GendernDetails">Wozu Gendern? Test</Link>
                 </li>
                 <li className="/Tips">
                 <Link to="/">Tipps und Tricks</Link>
